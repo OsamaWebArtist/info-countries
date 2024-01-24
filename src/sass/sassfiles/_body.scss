@@ -1,0 +1,82 @@
+@import "./root";
+
+.bodyweb{
+
+    padding-top: 50px;
+    background-color: var(--Very-Light-Gray-LightModeBackground);
+
+    .container{
+        padding-left: 0px;
+        padding-right: 0px;
+        .inputs{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+            .search-p{
+                position: relative;
+                
+                input{
+                    width: 500px;
+                    box-shadow: #a3a3a3 0 0 3px 0px;
+                    padding: 15px 10px;
+                    border-radius: 5px;
+                    padding-left: 90px;
+                    border: none;
+                    &[type="search"]::-webkit-search-cancel-button {
+                        display: none;
+                    }
+                    &:focus{
+                        border: none;
+                        outline: none;
+                    }
+                    &::placeholder{
+                        color: var(--White-DarkModeText---LightModeElements);
+                    }
+                }
+                i{
+                    position: absolute;
+                    left: 30px;
+                    transform: translate(-50%,-50%);
+                    top: 50%;
+                    color: var(--White-DarkModeText---LightModeElements);
+                }
+            }
+            
+            select{
+            width: 170px;
+            padding: 15px 10px;
+            box-shadow: #a3a3a3 0 0 3px 0px;
+            border: none;
+            box-shadow: 0 0 inset;
+            border-bottom: 1px solid var(--Very-Light-Gray-LightModeBackground);
+            border-radius: 5px;
+                &:focus{
+                border: none;
+                outline: none;
+                }
+            }
+
+        }
+
+    }
+}
+
+/*special classes for darkMode*/
+
+.head-darkmode{
+    background-color: var(--Dark-Blue-DarkModeElements) !important;
+    color: white !important;
+    border: none !important;
+}
+.body-darkmode{
+    background-color: var(--Very-Dark-Blue-DarkModeBackground)!important ;
+    color: white !important;
+}
+
+/**************/
+
+.head-lightmode{
+    background-color: white;
+    color: var(--Very-Dark-Blue-LightModeText);
+}
+
